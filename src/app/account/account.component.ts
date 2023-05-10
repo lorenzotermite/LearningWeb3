@@ -9,6 +9,7 @@ import { ContractService } from '../contract.service';
 export class AccountComponent {
   constructor(public _contractService: ContractService) {
     this._contractService.enableDapp();
+
     this._contractService.listenToEvents();
   }
 }
